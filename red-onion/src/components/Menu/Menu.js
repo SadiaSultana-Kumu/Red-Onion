@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import fakeData from '../../images/fakeData';
-import BreakFast from '../../components/BreakFast/BreakFast';
+import Lunch from '../../components/Lunch/Lunch';
 
-const Menu = () => {
-    const breakfast6 = fakeData.slice(0,6);
-    const [quantity, setQuantity] = useState(breakfast6);
+const Menu = (props) => {
+    const lunch6 = fakeData.slice(6,12);
+    const [quantity, setQuantity] = useState(lunch6);
+
+    const handleItem = (item) => {
+          console.log(item);
+    }
+
     return (
         <div>
             <div>
                 {
-                    quantity.map(items => <BreakFast item={items}></BreakFast>)
+                    quantity.map(items => <Lunch handleItem = {handleItem} item={items}></Lunch>)
                 }
             </div>
             

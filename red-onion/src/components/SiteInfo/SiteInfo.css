@@ -1,0 +1,26 @@
+.siteinfo{
+    background-color: black;
+    height: 300px;
+    margin-top: 20px;
+    padding-top: 50px;
+   
+}
+.icon-img{
+    float: left;
+    width: 30%;
+}
+.icon-img img{
+    width: 180px;
+    height: 60px;
+    padding: 10px;
+}
+.siteinfo-p{
+    float: right;
+    width: 30%;
+    color: lightgrey
+}
+.siteinfo-p2{
+    float: right;
+    width: 30%;
+    color: lightgrey
+}

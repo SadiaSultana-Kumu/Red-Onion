@@ -5,9 +5,9 @@ const MenuBar = () => {
     return (
         <div className="menubar">
             <nav>
-                <button className="menu-toggle"><h6>Breakfast</h6></button>
-                <button className="menu-toggle"><h6>Lunch</h6></button>
-                <button className="menu-toggle"><h6>Dinner</h6></button>
+                <a href="/breakfast" className="menu-toggle"><strong>Breakfast</strong></a>
+                <a href="/lunch" className="menu-toggle"><strong>Lunch</strong></a>
+                <a href="/dinner" className="menu-toggle"><strong>Dinner</strong></a>
             </nav>
         </div>
     );

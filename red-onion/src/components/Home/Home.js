@@ -3,6 +3,9 @@ import MenuBar from '../MenuBar/MenuBar';
 import Navbar from '../Navbar/Navbar';
 import Search from '../Search/Search';
 import Menu from '../Menu/Menu';
+import Lunch from '../Lunch/Lunch';
+
+
 
 const Home = () => {
     return (
