@@ -1,21 +1,20 @@
 import React from 'react';
-import MenuBar from '../MenuBar/MenuBar';
-import Navbar from '../Navbar/Navbar';
-import Search from '../Search/Search';
 import Menu from '../Menu/Menu';
-import Lunch from '../Lunch/Lunch';
-
+import Search from '../Search/Search';
+import SiteInfo from '../SiteInfo/SiteInfo';
+import Footer from '../Footer/Footer';
 
 
 const Home = () => {
+
     return (
         <div>
-            <Navbar></Navbar>
             <Search></Search>
-            <MenuBar></MenuBar>
             <Menu></Menu>
+            <Footer></Footer>
+            <SiteInfo></SiteInfo>
         </div>
     );
 };
 
-export default Home;
+export default Home; 

@@ -1,25 +1,29 @@
 import React from 'react';
 import './SiteInfo.css';
-import icon from '../../images/logo2.png';
+import logo from '../../images/logo.png';
 
 const SiteInfo = () => {
     return (
-        <div className="siteinfo">
-            <div className="icon-img">
-                <img src={icon} alt=""/>
-            </div>
-            <div className="siteinfo-p">
-                <p>About Online Food<br/>Read our blog<br/>sign up to deliver<br/>Add your restaurant<br/></p>
-            </div>
-            <div className="siteinfo-p2">
-                    <p>
-                        Get Help<br/>
-                        Read FAQs<br/>
-                        View all cities<br/>
-                        restaurants near me<br/>
-                    </p>
+        <div className="footer-block">
+            <div className="row">
+                <div className="col-6">
+                    <img className="w-25" src={logo} alt=""/>
                 </div>
-        </div>
+                <div className="col-3">
+                    <a href='/'>About Online Food</a><br/>
+                    <a href='/'>Read Our Blog</a><br/>
+                    <a href='/signup'>Sign Up For Delivery</a><br/>
+                    <a href='/'>Add Your Restaurant</a><br/>
+                </div>
+                <div className="col-3">
+                    <a href='/'>Get Help</a><br/>
+                    <a href='/'>Read FAQs</a><br/>
+                    <a href='/'>View All Cities</a><br/>
+                    <a href='/'>Restaurants Near Me</a><br/>
+                </div>
+            </div>
+            <p className="text-center text-secondary"><small>Copyright © 2020 Red Onion Foods</small></p>
+        </div> 
     );
 };
 
