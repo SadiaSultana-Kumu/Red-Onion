@@ -8,17 +8,17 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { AuthContextProvider, PrivateRoute } from './components/useAuth/useAuth';
 import NavBar from './components/NavBar/NavBar';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
-import { AuthContextProvider } from './components/UseAuth/UseAuth';
-import Tracking from './components/Tracking/Tracking';
+
 
 
 function App() {
   
   return (
     <div className="App">
-     <AuthContextProvider>
+    <AuthContextProvider>
         <Router>
         <NavBar></NavBar>
         <Switch>
@@ -30,9 +30,6 @@ function App() {
             </Route>
             <Route path="/order">
             <PlaceOrder></PlaceOrder>
-          </Route>
-          <Route path="/tracking">
-            <Tracking></Tracking>
           </Route>
           <Route exact path="/">
             <Home></Home>

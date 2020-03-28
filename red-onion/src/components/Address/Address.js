@@ -1,6 +1,6 @@
 import React from 'react';
 import './Address.css';
-import {useAuth} from '../UseAuth/UseAuth';
+import {useAuth} from '../useAuth/useAuth';
 
 
 const Address = (props) => {

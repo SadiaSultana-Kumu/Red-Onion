@@ -14,7 +14,7 @@ const PlaceOrder = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-7">
+                <div className="col-md-7"> 
                     <Address handleForm={handleForm}></Address>
                 </div>
                 <div className="col-md-5">

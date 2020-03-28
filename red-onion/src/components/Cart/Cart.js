@@ -3,11 +3,13 @@ import CartItem from '../CartItem/CartItem';
 import './Cart.css';
 import { Link } from 'react-router-dom';
 
+
 const Cart = (props) => {
+
     const [cart, setCart] = useState(
         JSON.parse(sessionStorage.getItem('cart'))
     );
-
+      
     
     const handleCart = item => {
         const newCart = cart.filter(el=> el.title !== item.title)
@@ -29,7 +31,9 @@ const Cart = (props) => {
                 })
             } 
             <Link to='/tracking'>
-                <button className="btn btn-danger" disabled={!props.formComplete || !cart.length}>Place Order</button>
+                <button className="btn btn-danger"
+                        disabled={!props.formComplete || !cart.length}
+                >Place Order</button>
             </Link>
             
         </div>

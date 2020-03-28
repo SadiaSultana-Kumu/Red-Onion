@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../../images/logo2.png';
 import './NavBar.css';
-import Auth from '../UseAuth/UseAuth';
+import Auth from '../useAuth/useAuth';
+
 
 const NavBar = () => {
     const auth = Auth();
@@ -10,8 +11,7 @@ const NavBar = () => {
             <a className="navbar-brand" href="/home"><img src={logo} alt="Red Onion Foods"></img></a>
             <div className="navbar-nav flex-row">
                 <a className="nav-item nav-link active" href="/home">Home <span className="sr-only">(current)</span></a>
-                
-                {auth.user.name? 
+                {auth.user ? 
                     <a onClick={auth.signOut} className="nav-item nav-link"  href='/home'>Sign Out</a>:
                     <a className="nav-item nav-link" href="/signup">Sign Up</a>}
             </div>

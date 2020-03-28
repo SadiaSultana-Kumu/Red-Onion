@@ -2,7 +2,7 @@ import React from 'react';
 import bike from '../../images/Image/Group1151.png'
 import helmet from '../../images/Image/Group1152.png';
 import './Rider.css';
-import {useAuth} from '../UseAuth/UseAuth';
+import {useAuth} from '../useAuth/useAuth';
 
 const Rider = () => {
     const auth = useAuth();
