@@ -3,6 +3,7 @@ import Menu from '../Menu/Menu';
 import Search from '../Search/Search';
 import SiteInfo from '../SiteInfo/SiteInfo';
 import Footer from '../Footer/Footer';
+import Inventory from '../Inventory/Inventory';
 
 
 const Home = () => {

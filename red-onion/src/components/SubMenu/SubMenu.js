@@ -1,19 +1,22 @@
 import React from 'react';
+import Item from '../Item/Item';
+import './SubMenu.css';
 import { Link } from 'react-router-dom';
-import Lunch from '../Item/Item';
+
 const SubMenu = (props) => {
+    
     return (
-        <div>
-            <div className="container">
+        <div className="container">
             <div className="row">
-                {
+                {   
                     props.curMenu.map(item => {
-                        return <Lunch item={item}
+                        return <Item key ={item._id}
+                                    item={item}
                                     handleItem={props.handleItem}
-                                ></Lunch>
+                                ></Item>
                     })
                 }
-            </div> 
+            </div>
             <br/>
             <Link to='/signup'>
                 <button className="btn btn-danger"
@@ -21,7 +24,6 @@ const SubMenu = (props) => {
                     onClick={props.handleOrder}
                 >Checkout Your Food</button>
             </Link>
-        </div>
         </div>
     );
 };
