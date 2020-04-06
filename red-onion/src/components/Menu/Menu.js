@@ -13,7 +13,7 @@ const Menu = () => {
     );
 
     useEffect(()=>{
-        fetch('http://localhost:4200/addMenu')
+        fetch('http://fierce-chamber-20393.herokuapp.com/addMenu')
         .then(res => res.json())
         .then(data => {
             setFullMenu(data);
