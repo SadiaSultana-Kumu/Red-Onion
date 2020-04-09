@@ -46,7 +46,7 @@ const CheckoutForm = (props) => {
         paymentId: paymentMethod.id,
         last4: paymentMethod.card.last4
       }
-      fetch('http://fierce-chamber-20393.herokuapp.com/placeOrder', {
+      fetch('https://fierce-chamber-20393.herokuapp.com/placeOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

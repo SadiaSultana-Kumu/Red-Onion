@@ -13,14 +13,14 @@ const Menu = () => {
     );
 
     useEffect(()=>{
-        fetch('http://fierce-chamber-20393.herokuapp.com/addMenu')
+        fetch('https://fierce-chamber-20393.herokuapp.com/addmenu')
         .then(res => res.json())
         .then(data => {
             setFullMenu(data);
             setCurCategory('lunch')
         })
     },[])
- 
+
     useEffect(()=>{
         if(curCategory !== ''){
             const current = fullMenu.filter(item => item.type === curCategory)
