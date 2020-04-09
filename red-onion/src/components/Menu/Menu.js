@@ -20,7 +20,7 @@ const Menu = () => {
             setCurCategory('lunch')
         })
     },[])
-
+ 
     useEffect(()=>{
         if(curCategory !== ''){
             const current = fullMenu.filter(item => item.type === curCategory)
