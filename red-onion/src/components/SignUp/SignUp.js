@@ -4,7 +4,7 @@ import './SignUp.css';
 import logo from '../../images/logo2.png';
 
 const SignUp = () => {
-    const [userInfo,setuserInfo] = useState({
+    const [userInfo, setuserInfo] = useState({
         name: '',
         email: '',
         password: '',
